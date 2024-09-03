@@ -14,7 +14,10 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 8000;
-const allowedOrigins = ["https://reactjs-doctor-appointment.onrender.com"];
+const allowedOrigins = [
+  "https://reactjs-doctor-appointment.onrender.com",
+  "https://reactjs-doctor-appointment.vercel.app",
+];
 
 const corsOptions = {
   origin: function (origin, callback) {
